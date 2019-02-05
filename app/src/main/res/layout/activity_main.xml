@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffb798"
+    tools:context=".MainActivity"
+    android:id="@+id/relativeLayout">
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="253dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Enter the EMail-ID"
+        android:inputType="text|textPersonName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/etfather"
+        android:layout_width="253dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Father Contact"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPass" />
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="253dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter the Password"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <EditText
+        android:id="@+id/etmother"
+        android:layout_width="253dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="190dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Mother Contact"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etfather" />
+
+    <EditText
+        android:id="@+id/etBrother"
+        android:layout_width="253dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="95dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Brother Contact Number"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etmother" />
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="149dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="16dp"
+        android:onClick="onClickRegister"
+        android:text="REGISTER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etBrother" />
+</android.support.constraint.ConstraintLayout>

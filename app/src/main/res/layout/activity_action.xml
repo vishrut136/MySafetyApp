@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActionActivity"
+    android:id="@+id/relativeLayout2">
+
+    <ImageButton
+        android:id="@+id/ibtCall"
+        android:layout_width="181dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="97dp"
+        android:onClick="onClickCall"
+        app:srcCompat="@android:drawable/sym_action_call"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ibtSms"
+        android:layout_width="177dp"
+        android:layout_height="157dp"
+        android:layout_marginBottom="116dp"
+        android:layout_marginTop="16dp"
+        android:onClick="onClickMssg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibtCall"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/sms" />
+</android.support.constraint.ConstraintLayout>
